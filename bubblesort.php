@@ -5,11 +5,11 @@
 | Read Friendly Debug Function
 |--------------------------------------------------------------------------
 |
-| ddF() prints data in readable format using <pre>
+| pretty() prints data in readable format using <pre>
 |
 */
 
-function ddF($data)
+function pretty($data)
 {
     echo "<pre>";
 
@@ -30,7 +30,7 @@ function bubbleSort($numbers)
     $length = count($numbers);
 
     echo "Original Array";
-    ddF($numbers);
+    pretty($numbers);
 
     // Outer loop
     for ($i = 0; $i < $length - 1; $i++) {
@@ -74,7 +74,7 @@ function bubbleSort($numbers)
 
                 echo "Array After Swap";
 
-                ddF($numbers);
+                pretty($numbers);
 
             } else {
 
@@ -117,6 +117,6 @@ $sortedNumbers = bubbleSort($numbers);
 
 echo "Final Sorted Array";
 
-ddF($sortedNumbers);
+pretty($sortedNumbers);
 
 ?>
